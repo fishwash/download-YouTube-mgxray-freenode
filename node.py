@@ -41,7 +41,7 @@ def support_gbk(zip_file: ZipFile):
     return zip_file
 
 with support_gbk(ZipFile(output)) as myzip:
-    myzip.extractall(pwd=passwd.encode('utf-8'))
+    myzip.extractall(pwd=passwd.encode('utf-8')) #想改下载位置的话，这一行
 
 
 # 删除压缩包
